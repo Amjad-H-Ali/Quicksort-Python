@@ -17,8 +17,13 @@ def quick_sort(array):
 	# Define and initialize right sub-array
 	right = [];
 
+	# For loop to iterate over indices in array but the pivot
 	for i in range(0, arrLen - 1):
-		print(i)
+
+		# If current element is less than the pivot
+		# place it in the left sub-array
+		if (array[i] < pivot):
+			left.insert(array[i])
 
 
 quick_sort([31, 17, 13, 0, 0, 42, 0, 9, 5, 7, 9, 19, 2])
