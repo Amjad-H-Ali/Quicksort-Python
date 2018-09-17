@@ -9,12 +9,16 @@ def quick_sort(array):
 		return array
 
 	# Define and initialize pivot to last number in array to compare to other digits in array
-	pivot = array[arrlen - 1]
+	pivot = array[arrLen - 1]
 
-	# Define and initialize left to empty array
+	# Define and initialize left sub-array
 	left = [];
 
-	# Define and initialize right to empty array
+	# Define and initialize right sub-array
 	right = [];
-	
 
+	for i in range(0, arrLen - 1):
+		print(i)
+
+
+quick_sort([31, 17, 13, 0, 0, 42, 0, 9, 5, 7, 9, 19, 2])
