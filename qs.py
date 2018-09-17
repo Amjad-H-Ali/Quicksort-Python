@@ -23,15 +23,15 @@ def quick_sort(array):
 		# If current element is less than the pivot
 		# place it in the left sub-array
 		if (array[i] < pivot):
-			left.insert(array[i])
+			left.append(array[i])
 
 		# Otherwise, place it in right
 		else:
-			right.insert(array[i])
+			right.append(array[i])
 
 	# Recursively, do the above code to the left and right sub arrays
 	# while placing the pivot in between
-	return quick_sort([*quick_sort(left), pivot, *quick_sort(right)])		
+	return ([*quick_sort(left), pivot, *quick_sort(right)])		
 
 
 
