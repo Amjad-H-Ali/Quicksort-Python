@@ -14,3 +14,7 @@ def quick_sort(array):
 	# Define and initialize left to empty array
 	left = [];
 
+	# Define and initialize right to empty array
+	right = [];
+	
+
