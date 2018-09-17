@@ -6,3 +6,6 @@ def quick_sort(array):
 	if (len(array) < 2):
 		return array
 
+	# Define and initialize pivot to last number in array to compare to other digits in array
+	pivot = len(array - 1)
+
