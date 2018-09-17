@@ -24,11 +24,15 @@ def quick_sort(array):
 		# place it in the left sub-array
 		if (array[i] < pivot):
 			left.insert(array[i])
-			
+
 		# Otherwise, place it in right
 		else:
 			right.insert(array[i])
 
+	# Recursively, do the above code to the left and right sub arrays
+	# while placing the pivot in between
+	return quick_sort([*quick_sort(left), pivot, *quick_sort(right)])		
 
 
-quick_sort([31, 17, 13, 0, 0, 42, 0, 9, 5, 7, 9, 19, 2])
+
+print(quick_sort([31, 17, 13, 0, 0, 42, 0, 9, 5, 7, 9, 19, 2]))
